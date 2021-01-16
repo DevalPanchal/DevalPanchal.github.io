@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-This is a personal portfolio website made to showcase my skills and projects
+This is a personal portfolio website made to showcase my skills and projects. Link to project can be found here https://devalpanchal.github.io/.
 
 # Project description
 This project was built using <br>
