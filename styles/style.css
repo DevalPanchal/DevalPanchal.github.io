@@ -215,7 +215,7 @@ ul {
   border: 2px solid var(--secondaryTextColor);
   font-family: var(--oswald);
   font-size: 24px;
-  background-color: var(--backgroundsecondary);
+  background-color: transparent;
   border-radius: 5px;
   padding: 5px 10px;
   -webkit-transition: 0.5s;
