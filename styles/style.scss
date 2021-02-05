@@ -345,10 +345,9 @@ ul {
         width: 100%;
         height: 700px;
         border-radius: 5px;
-        box-shadow: 0 0 10px 2px var(--backgroundsecondary);
+        box-shadow: 0 0 5px 1px var(--backgroundsecondary);
         background-color: var(--projectCard);
         color: var(--secondaryColor);
-
         .image-container {
           width: 100%;
           height: 55%;
@@ -468,6 +467,7 @@ ul {
     .project-container:hover {
       transform: scale(1.02, 1.02);
       transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px 2px var(--backgroundsecondary);
     }
   }
 }
@@ -596,7 +596,6 @@ img {
 // MEDIA QUERIES
 
 // Desktop
-
 @media screen and (max-width: 1281px) {
 
   .main-container {
