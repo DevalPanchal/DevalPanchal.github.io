@@ -460,9 +460,10 @@ ul {
 .portfolio-container .project-wrapper .project-container .project .description-container .technology-used {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 50%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow-x: scroll;
+  width: 96%;
 }
 
 .portfolio-container .project-wrapper .project-container .project .description-container p {
@@ -764,6 +765,15 @@ img {
   }
 }
 
+ul::-webkit-scrollbar {
+  height: 12px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--backgroundsecondary);
+  border-radius: 10px;
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   .portfolio-container .project-wrapper {
     -ms-grid-columns: 1fr 1fr;
@@ -817,9 +827,9 @@ img {
   .portfolio-container .project-wrapper .project-container .project .description-container .technology-used {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    width: 50%;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 96%;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .button-container {
     gap: 10px;
@@ -864,7 +874,7 @@ img {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
+    width: 96%;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .button-container {
     gap: 10px;
@@ -961,9 +971,9 @@ img {
   .portfolio-container .project-wrapper .project-container .project .description-container .technology-used {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    width: 18%;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 96%;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .button-container {
     gap: 10px;
@@ -1060,9 +1070,9 @@ img {
   .portfolio-container .project-wrapper .project-container .project .description-container .technology-used {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    width: 20%;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 96%;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .button-container {
     gap: 10px;

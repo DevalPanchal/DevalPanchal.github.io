@@ -396,8 +396,12 @@ ul {
 
           .technology-used {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            width: 50%;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            overflow-x: scroll;
+
+            width: 96%;
+
           }
 
           p {
@@ -662,7 +666,17 @@ img {
     font-size: 30px;
   }
 }
+//////// TECHNOLOGY CONTAINER SCROLLBAR //////////
+ul::-webkit-scrollbar {
+  height: 12px;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--backgroundsecondary);
 
+  border-radius: 10px;
+}
+
+//////////////////////////////////////////////
 // Desktops, Laptops
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -723,8 +737,8 @@ img {
           .description-container {
             .technology-used {
               display: grid;
-              grid-template-columns: 1fr 1fr;
-              width: 50%;
+              grid-template-columns: 1fr 1fr 1fr;
+              width: 96%;
             }
             .button-container {
               gap: 10px;
@@ -772,7 +786,7 @@ img {
             .technology-used {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
-              width: 50%;
+              width: 96%;
             }
             .button-container {
               gap: 10px;
@@ -870,8 +884,8 @@ img {
             }
             .technology-used {
               display: grid;
-              grid-template-columns: 1fr 1fr;
-              width: 18%;
+              grid-template-columns: 1fr 1fr 1fr;
+              width: 96%;
             }
             .button-container {
               gap: 10px;
@@ -969,8 +983,8 @@ img {
             }
             .technology-used {
               display: grid;
-              grid-template-columns: 1fr 1fr;
-              width: 20%;
+              grid-template-columns: 1fr 1fr 1fr;
+              width: 96%;
             }
             .button-container {
               gap: 10px;
