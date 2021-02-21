@@ -13,13 +13,12 @@ function load() {
 
 let submitted = false;
 
-// $("#gform").on("submit", (e) => {
-//     $("#gform").prepend("Your form has been submitted. Thank You!");
-//     $("#gform").css("text-align", "center");
-// });
 let submitBtn = document.getElementById("submit-btn");
+let nameField = document.getElementById("name");
+let subjectField = document.getElementById("subject");
+let emailField = document.getElementById("email");
+
 $("#gform").submit((event) => {
     submitBtn.style.display = "none";   
     $("#gform").prepend("Your form has been submitted. Thank You!");
-    
 });

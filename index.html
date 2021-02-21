@@ -350,23 +350,22 @@
         <div class="contact-me-container">
             <h1 class="title">Get In Touch</h1>
 
-            <form class="contact-form" id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;"
-                action="https://docs.google.com/forms/d/e/1FAIpQLSeAeMo9dbD1kTwk-n26aq7dmz4RcxVmdDtLafrweliGzfKB9g/formResponse?">
+            <form class="contact-form" id="gform" name="gform" action="https://formspree.io/f/xgeprgwb" method="POST" onsubmit="submitted=true;">
 
-                <label for="entry.946707384">Name</label>
-                <input class="input-field" type="text" name="entry.946707384" id="entry.946707384"
+                <label for="name">Name</label>
+                <input class="input-field" type="text" name="name" id="name"
                     placeholder="Your Name..." required>
 
-                <label for="entry.921933931">Subject</label>
-                <input class="input-field" type="text" name="entry.921933931" id="entry.921933931"
+                <label for="subject">Subject</label>
+                <input class="input-field" type="text" name="subject" id="subject"
                     placeholder="Subject...">
 
-                <label for="entry.277719201">Email</label>
-                <input class="input-field" type="text" name="entry.277719201" id="entry.277719201"
+                <label for="email">Email</label>
+                <input class="input-field" type="text" name="email" id="email"
                     placeholder="Your Email..." required>
 
-                <label for="entry.307087307">Message</label>
-                <textarea class="input-field" name="entry.307087307" id="entry.307087307"></textarea>
+                <label for="message">Message</label>
+                <textarea class="input-field" name="message" id="message" style="resize: none;"></textarea>
 
                 <input class="btn-submit" id="submit-btn" type="submit" value="submit">
 
