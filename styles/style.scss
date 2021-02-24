@@ -24,6 +24,7 @@
   --linkColor: #4a79d1;
 
   --projectWrapperColor: #f5f5f5;
+  --aboutMeBoxColor: #ebeff3;
 }
 
 html,
@@ -116,6 +117,7 @@ ul {
 .section-3 {
   overflow: auto;
   background: linear-gradient(to bottom left, var(--backgroundsecondary) 0%, var(--gradientColor) 100%);
+  border-bottom: 1px solid var(--backgroundsecondary);
 }
 
 #particles-js {
@@ -230,6 +232,7 @@ ul {
 
 .about-me-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
@@ -243,72 +246,77 @@ ul {
 
   margin: 0 auto;
 
-  .about-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .about-me-box {
+    background-color: var(--aboutMeBoxColor);
     
-    width: 95%;
-    max-width: 95%;
-
-    height: auto;
-    gap: 2px;
-
-    
-
-    .about-me {
-      border-right: 5px solid var(--background);
-    }
-    .about-me,
-    .more-about-me {
-      width: 97%;
-      display: flex;
-      justify-content: left;
-      flex-direction: column;
-      text-align: left;
-      margin: 5px auto;
-      max-height: 90%;
-
-      .introduce {
-        font-size: 42px;
-        font-weight: 500;
-        font-family: var(--oswald);
+    .about-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+      width: 95%;
+      max-width: 95%;
+  
+      height: auto;
+      gap: 2px;
+  
+      
+  
+      .about-me {
+        border-right: 5px solid var(--background);
       }
-
-      .detail {
-        font-size: 20px;
+      .about-me,
+      .more-about-me {
+        width: 97%;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        text-align: left;
+        margin: 5px auto;
+        max-height: 90%;
+  
+        .introduce {
+          font-size: 42px;
+          font-weight: 500;
+          font-family: var(--oswald);
+        }
+  
+        .detail {
+          font-size: 20px;
+          font-family: var(--roboto);
+          letter-spacing: 1px;
+          margin: auto 5px auto 5px;
+        }
+      }
+    }
+    .social-links {
+      display: flex;
+      justify-content: space-around;
+      width: 95%;
+      height: auto;
+      margin: 10px;
+      .fab,
+      .fas {
+        font-size: 60px;
+        color: var(--background);
+        opacity: 1;
+        transition: 0.2s;
+      }
+  
+      .fab:hover,
+      .fas:hover {
+        opacity: 0.8;
+      }
+  
+      label {
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s;
         font-family: var(--roboto);
-        letter-spacing: 1px;
-        margin: auto 5px auto 5px;
+        letter-spacing: 0.5px;
       }
     }
   }
-  .social-links {
-    display: flex;
-    justify-content: space-around;
-    width: 95%;
-    height: auto;
-    margin: 10px;
-    .fab,
-    .fas {
-      font-size: 60px;
-      color: var(--background);
-      opacity: 1;
-      transition: 0.2s;
-    }
-
-    .fab:hover,
-    .fas:hover {
-      opacity: 0.8;
-    }
-
-    label {
-      display: flex;
-      flex-direction: column;
-      transition: 0.2s;
-      font-family: var(--roboto);
-      letter-spacing: 0.5px;
-    }
-  }
+  
 }
 
 .portfolio-container {
@@ -956,6 +964,18 @@ ul::-webkit-scrollbar-thumb {
 @media (min-width: 320px) and (max-width: 480px) {
   .about-me-container {
     height: auto;
+    .about-me-box {
+      margin: 15px;
+      .about-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        .about-me {
+          border-bottom: 5px solid var(--background);
+          border-right: none;
+        }
+      }
+    }
+    
   }
   .nav-bar.hamburger-menu {
     position: relative;

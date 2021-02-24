@@ -16,6 +16,7 @@
   --contactForm: #cccccc;
   --linkColor: #4a79d1;
   --projectWrapperColor: #f5f5f5;
+  --aboutMeBoxColor: #ebeff3;
 }
 
 html,
@@ -118,6 +119,7 @@ ul {
   overflow: auto;
   background: -webkit-gradient(linear, right top, left bottom, from(var(--backgroundsecondary)), to(var(--gradientColor)));
   background: linear-gradient(to bottom left, var(--backgroundsecondary) 0%, var(--gradientColor) 100%);
+  border-bottom: 1px solid var(--backgroundsecondary);
 }
 
 #particles-js {
@@ -250,6 +252,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -265,7 +270,11 @@ ul {
   margin: 0 auto;
 }
 
-.about-me-container .about-wrapper {
+.about-me-container .about-me-box {
+  background-color: var(--aboutMeBoxColor);
+}
+
+.about-me-container .about-me-box .about-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -276,12 +285,12 @@ ul {
   gap: 2px;
 }
 
-.about-me-container .about-wrapper .about-me {
+.about-me-container .about-me-box .about-wrapper .about-me {
   border-right: 5px solid var(--background);
 }
 
-.about-me-container .about-wrapper .about-me,
-.about-me-container .about-wrapper .more-about-me {
+.about-me-container .about-me-box .about-wrapper .about-me,
+.about-me-container .about-me-box .about-wrapper .more-about-me {
   width: 97%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,22 +307,22 @@ ul {
   max-height: 90%;
 }
 
-.about-me-container .about-wrapper .about-me .introduce,
-.about-me-container .about-wrapper .more-about-me .introduce {
+.about-me-container .about-me-box .about-wrapper .about-me .introduce,
+.about-me-container .about-me-box .about-wrapper .more-about-me .introduce {
   font-size: 42px;
   font-weight: 500;
   font-family: var(--oswald);
 }
 
-.about-me-container .about-wrapper .about-me .detail,
-.about-me-container .about-wrapper .more-about-me .detail {
+.about-me-container .about-me-box .about-wrapper .about-me .detail,
+.about-me-container .about-me-box .about-wrapper .more-about-me .detail {
   font-size: 20px;
   font-family: var(--roboto);
   letter-spacing: 1px;
   margin: auto 5px auto 5px;
 }
 
-.about-me-container .social-links {
+.about-me-container .about-me-box .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,8 +333,8 @@ ul {
   margin: 10px;
 }
 
-.about-me-container .social-links .fab,
-.about-me-container .social-links .fas {
+.about-me-container .about-me-box .social-links .fab,
+.about-me-container .about-me-box .social-links .fas {
   font-size: 60px;
   color: var(--background);
   opacity: 1;
@@ -333,12 +342,12 @@ ul {
   transition: 0.2s;
 }
 
-.about-me-container .social-links .fab:hover,
-.about-me-container .social-links .fas:hover {
+.about-me-container .about-me-box .social-links .fab:hover,
+.about-me-container .about-me-box .social-links .fas:hover {
   opacity: 0.8;
 }
 
-.about-me-container .social-links label {
+.about-me-container .about-me-box .social-links label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,6 +1044,19 @@ ul::-webkit-scrollbar-thumb {
 @media (min-width: 320px) and (max-width: 480px) {
   .about-me-container {
     height: auto;
+  }
+  .about-me-container .about-me-box {
+    margin: 15px;
+  }
+  .about-me-container .about-me-box .about-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-me-container .about-me-box .about-wrapper .about-me {
+    border-bottom: 5px solid var(--background);
+    border-right: none;
   }
   .nav-bar.hamburger-menu {
     position: relative;
