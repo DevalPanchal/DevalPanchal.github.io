@@ -22,6 +22,8 @@
 
   --contactForm: #cccccc;
   --linkColor: #4a79d1;
+
+  --projectWrapperColor: #f5f5f5;
 }
 
 html,
@@ -251,6 +253,8 @@ ul {
     height: auto;
     gap: 2px;
 
+    
+
     .about-me {
       border-right: 5px solid var(--background);
     }
@@ -331,6 +335,7 @@ ul {
     height: auto;
     gap: 2rem;
     margin-bottom: 100px;
+    //background-color: var(--projectWrapperColor);
 
     .project-container {
       width: 96%;
@@ -338,14 +343,14 @@ ul {
       justify-content: center;
       align-items: center;
       margin: 5px auto;
-      border-radius: 5px;
+      border-radius: 2px;
 
       .project {
         width: 500px;
         width: 100%;
         height: 700px;
-        border-radius: 5px;
-        box-shadow: 0 0 5px 1px var(--backgroundsecondary);
+        border-radius: 2px;
+        //box-shadow: 0 0 5px 1px var(--backgroundsecondary);
         background-color: var(--projectCard);
         color: var(--secondaryColor);
         .image-container {
@@ -365,7 +370,7 @@ ul {
           text-align: left;
           width: 100%;
           height: 45%;
-          border-radius: 3px;
+          border-radius: 2px;
           position: relative;
 
           .project-description {
@@ -481,8 +486,8 @@ img {
   height: 100%;
   object-fit: cover;
   position: relative;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   top: 0;
   left: 0;
 }
@@ -495,11 +500,13 @@ img {
   width: 95vw;
   max-width: 95%;
 
-  height: 90vh;
+  height: auto;
   max-height: 80%;
 
   /* border: 2px dashed coral; */
   margin: 10px auto;
+  padding-bottom: 100px;
+  color: var(--secondaryTextColor);
 
   .title {
     color: var(--secondaryTextColor);
@@ -520,7 +527,14 @@ img {
 
     border-radius: 5px;
 
-    background-color: var(--contactForm);
+    //background-color: var(--contactForm);
+    .name-subject-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    
 
     .input-field {
       width: 100%;
@@ -533,19 +547,21 @@ img {
 
     .btn-submit {
       font-family: var(--oswald);
-      color: var(--secondaryTextColor);
+      color: var(--primaryTextColor);
       font-size: 20px;
       width: 100%;
       margin: 10px 0 10px 0;
-      background-color: var(--backgroundsecondary);
+      background-color: var(--cardBackground);
       border-radius: 5px;
       min-height: 25px;
       transition: 0.3s;
+      border: none;
     }
     .btn-submit:hover {
       background-color: var(--secondaryColor);
       color: var(--primaryTextColor);
       cursor: pointer;
+      
     }
 
     textarea {
@@ -555,16 +571,16 @@ img {
 }
 
 .footer {
-  height: 80px;
+  height: auto;
   background-color: var(--background);
   border-top: 1px solid var(--secondaryColor);
   .footer-info {
     height: 100%;
     display: grid;
-    grid-template-columns: 44% 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
 
     .personal-links {
       text-align: center;
@@ -870,6 +886,7 @@ ul::-webkit-scrollbar-thumb {
   }
 
   .portfolio-container {
+    margin-bottom: 25px;
     .project-wrapper {
       grid-template-columns: 1fr;
       width: 90%;
@@ -969,13 +986,15 @@ ul::-webkit-scrollbar-thumb {
   }
 
   .portfolio-container {
+    margin-bottom: 25px;
     .project-wrapper {
       grid-template-columns: 1fr;
       width: 100%;
+      
       .project-container {
         max-width: 100%;
         .project {
-          width: 90%;
+          width: 100%;
           height: 750px;
           .description-container {
             .project-description {
@@ -987,8 +1006,10 @@ ul::-webkit-scrollbar-thumb {
               width: 96%;
             }
             .button-container {
-              gap: 10px;
+              
               margin: 10px auto;
+              display: flex;
+              justify-content: flex-start;
             }
             .link {
               width: 200px;
@@ -996,7 +1017,7 @@ ul::-webkit-scrollbar-thumb {
               height: 25px;
               text-align: center;
               color: var(--secondaryTextColor);
-
+              
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
@@ -1008,7 +1029,7 @@ ul::-webkit-scrollbar-thumb {
             }
             .link:hover {
               background-color: var(--specialText);
-              cursor: pointer;
+              
             }
           }
         }

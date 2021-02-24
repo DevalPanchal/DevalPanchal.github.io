@@ -15,6 +15,7 @@
   --projectCard: #26313d;
   --contactForm: #cccccc;
   --linkColor: #4a79d1;
+  --projectWrapperColor: #f5f5f5;
 }
 
 html,
@@ -394,16 +395,14 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px auto;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .portfolio-container .project-wrapper .project-container .project {
   width: 500px;
   width: 100%;
   height: 700px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 1px var(--backgroundsecondary);
-          box-shadow: 0 0 5px 1px var(--backgroundsecondary);
+  border-radius: 2px;
   background-color: var(--projectCard);
   color: var(--secondaryColor);
 }
@@ -426,7 +425,7 @@ ul {
   text-align: left;
   width: 100%;
   height: 45%;
-  border-radius: 3px;
+  border-radius: 2px;
   position: relative;
 }
 
@@ -554,8 +553,8 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   top: 0;
   left: 0;
 }
@@ -573,10 +572,12 @@ img {
           flex-direction: column;
   width: 95vw;
   max-width: 95%;
-  height: 90vh;
+  height: auto;
   max-height: 80%;
   /* border: 2px dashed coral; */
   margin: 10px auto;
+  padding-bottom: 100px;
+  color: var(--secondaryTextColor);
 }
 
 .contact-me-container .title {
@@ -604,7 +605,14 @@ img {
   max-width: 90%;
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--contactForm);
+}
+
+.contact-me-container .contact-form .name-subject-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .contact-me-container .contact-form .input-field {
@@ -618,15 +626,16 @@ img {
 
 .contact-me-container .contact-form .btn-submit {
   font-family: var(--oswald);
-  color: var(--secondaryTextColor);
+  color: var(--primaryTextColor);
   font-size: 20px;
   width: 100%;
   margin: 10px 0 10px 0;
-  background-color: var(--backgroundsecondary);
+  background-color: var(--cardBackground);
   border-radius: 5px;
   min-height: 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: none;
 }
 
 .contact-me-container .contact-form .btn-submit:hover {
@@ -640,7 +649,7 @@ img {
 }
 
 .footer {
-  height: 80px;
+  height: auto;
   background-color: var(--background);
   border-top: 1px solid var(--secondaryColor);
 }
@@ -649,15 +658,15 @@ img {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 44% 1fr;
-      grid-template-columns: 44% 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .footer .footer-info .personal-links {
@@ -953,6 +962,9 @@ ul::-webkit-scrollbar-thumb {
     padding-right: 3px;
     font-size: 20px;
   }
+  .portfolio-container {
+    margin-bottom: 25px;
+  }
   .portfolio-container .project-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1052,6 +1064,9 @@ ul::-webkit-scrollbar-thumb {
     padding-right: 3px;
     font-size: 20px;
   }
+  .portfolio-container {
+    margin-bottom: 25px;
+  }
   .portfolio-container .project-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1061,7 +1076,7 @@ ul::-webkit-scrollbar-thumb {
     max-width: 100%;
   }
   .portfolio-container .project-wrapper .project-container .project {
-    width: 90%;
+    width: 100%;
     height: 750px;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .project-description {
@@ -1075,8 +1090,13 @@ ul::-webkit-scrollbar-thumb {
     width: 96%;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .button-container {
-    gap: 10px;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .link {
     width: 200px;
@@ -1096,7 +1116,6 @@ ul::-webkit-scrollbar-thumb {
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .link:hover {
     background-color: var(--specialText);
-    cursor: pointer;
   }
 }
 
