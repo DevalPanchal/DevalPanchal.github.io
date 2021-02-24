@@ -7,7 +7,7 @@
   --roboto: "Roboto", sans-serif;
   --oswald: "Oswald", sans-serif;
   --background: #1b242f;
-  --backgroundsecondary: #202731;
+  --backgroundsecondary: #235546;
   --gradientColor: #1d2c3d;
   --buttonBackground: #5174a1;
   --cardBackground: #d4d4d4;
@@ -102,8 +102,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left bottom, right top, from(var(--backgroundsecondary)), to(var(--gradientColor)));
-  background: linear-gradient(to top right, var(--backgroundsecondary) 0%, var(--gradientColor) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, var(--backgroundsecondary)), color-stop(90%, var(--gradientColor)));
+  background: linear-gradient(to top, var(--backgroundsecondary) 10%, var(--gradientColor) 90%);
   overflow: auto;
   height: 100vh;
   border-bottom: 1px solid var(--mainColor);
@@ -117,8 +117,8 @@ ul {
 
 .section-3 {
   overflow: auto;
-  background: -webkit-gradient(linear, right top, left bottom, from(var(--backgroundsecondary)), to(var(--gradientColor)));
-  background: linear-gradient(to bottom left, var(--backgroundsecondary) 0%, var(--gradientColor) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, var(--backgroundsecondary)), color-stop(90%, var(--gradientColor)));
+  background: linear-gradient(to bottom, var(--backgroundsecondary) 10%, var(--gradientColor) 90%);
   border-bottom: 1px solid var(--backgroundsecondary);
 }
 
@@ -215,11 +215,11 @@ ul {
 
 .btn {
   color: var(--secondaryTextColor);
-  border: 2px solid var(--secondaryTextColor);
+  border: 1px solid var(--secondaryTextColor);
   font-family: var(--oswald);
   font-size: 24px;
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 5px 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -405,6 +405,8 @@ ul {
           align-items: center;
   margin: 5px auto;
   border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio-container .project-wrapper .project-container .project {
@@ -421,11 +423,11 @@ ul {
   height: 55%;
   position: relative;
   opacity: 1;
-}
-
-.portfolio-container .project-wrapper .project-container .project .image-container :hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.portfolio-container .project-wrapper .project-container .project .image-container:hover {
   opacity: 0.5;
 }
 
@@ -534,8 +536,8 @@ ul {
   border: 2px solid var(--secondaryTextColor);
   font-family: var(--oswald);
   font-size: 24px;
-  background-color: var(--backgroundsecondary);
-  border-radius: 5px;
+  background-color: transparent;
+  border-radius: 3px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 0 5px 0 5px;
@@ -550,10 +552,8 @@ ul {
 .portfolio-container .project-wrapper .project-container:hover {
   -webkit-transform: scale(1.02, 1.02);
           transform: scale(1.02, 1.02);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: 0 0 10px 2px var(--backgroundsecondary);
-          box-shadow: 0 0 10px 2px var(--backgroundsecondary);
+  -webkit-box-shadow: 0 0 10px 2px var(--background);
+          box-shadow: 0 0 10px 2px var(--background);
 }
 
 img {
@@ -788,7 +788,7 @@ ul::-webkit-scrollbar {
 }
 
 ul::-webkit-scrollbar-thumb {
-  background-color: var(--backgroundsecondary);
+  background-color: var(--background);
   border-radius: 10px;
 }
 
@@ -816,7 +816,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: var(--background);
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -861,7 +861,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: var(--background);
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -906,7 +906,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: var(--background);
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1008,7 +1008,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: var(--background);
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
