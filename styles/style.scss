@@ -25,6 +25,8 @@
 
   --projectWrapperColor: #f5f5f5;
   --aboutMeBoxColor: #ebeff3;
+
+  --inputFieldColor:#ffffff;
 }
 
 html,
@@ -351,7 +353,7 @@ ul {
       align-items: center;
       margin: 5px auto;
       border-radius: 2px;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.2s ease-in-out;
       .project {
         width: 500px;
         width: 100%;
@@ -481,9 +483,9 @@ ul {
       }
     }
     .project-container:hover {
-      transform: scale(1.02, 1.02);
+      //transform: scale(1.003, 1.003);
       
-      box-shadow: 0 0 10px 2px var(--background);
+      box-shadow: 0 0 10px 3px var(--background);
     }
   }
 }
@@ -544,13 +546,19 @@ img {
     
 
     .input-field {
+      
       width: 100%;
       padding: 10px 0 10px 0;
-      background-color: var(--secondaryTextColor);
+      background-color: var(--inputFieldColor);
       border-radius: 5px;
       border: 1px solid var(--backgroundsecondary);
       font-size: 15px;
+      transition: 0.2s all ease-in-out;
+      &:hover {
+        background-color: var(--cardBackground);
+      }
     }
+    
 
     .btn-submit {
       font-family: var(--oswald);
@@ -558,15 +566,15 @@ img {
       font-size: 20px;
       width: 100%;
       margin: 10px 0 10px 0;
-      background-color: var(--cardBackground);
+      background-color: var(--secondaryColor);
       border-radius: 5px;
       min-height: 25px;
-      transition: 0.3s;
+      transition: 0.2s;
       border: none;
     }
     .btn-submit:hover {
-      background-color: var(--secondaryColor);
-      color: var(--primaryTextColor);
+      background-color: transparent;
+      color: var(--secondaryTextColor);
       cursor: pointer;
       
     }
@@ -1130,7 +1138,6 @@ ul::-webkit-scrollbar-thumb {
     }
   }
 }
-
 
 @keyframes text-popin {
   from {
