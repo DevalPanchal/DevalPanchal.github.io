@@ -676,7 +676,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 1px;
 }
 
 .footer .footer-info .personal-links {
