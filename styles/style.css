@@ -271,10 +271,6 @@ ul {
   margin: 0 auto;
 }
 
-.about-me-container .about-me-box {
-  background-color: var(--aboutMeBoxColor);
-}
-
 .about-me-container .about-me-box .about-wrapper {
   display: -ms-grid;
   display: grid;
@@ -405,7 +401,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px auto;
-  border-radius: 2px;
+  border-radius: 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -414,7 +410,7 @@ ul {
   width: 500px;
   width: 100%;
   height: 700px;
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: var(--projectCard);
   color: var(--secondaryColor);
 }
@@ -561,8 +557,8 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   top: 0;
   left: 0;
 }
@@ -647,8 +643,8 @@ img {
   background-color: var(--secondaryColor);
   border-radius: 5px;
   min-height: 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   border: none;
 }
 
