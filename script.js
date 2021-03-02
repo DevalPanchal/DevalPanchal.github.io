@@ -1,11 +1,15 @@
-const hamburger = () => {
-    let nav = document.getElementById('my-nav');
+const icon = document.getElementById('icon');
+const nav = document.getElementById('my-nav');
+
+function hamburger() {
     if (nav.className === 'nav-bar') {
         nav.className += " hamburger-menu";
     } else {
         nav.className = "nav-bar";
     }
 }
+
+icon.addEventListener('click', hamburger);
 
 function load() {
     if (submitted) { /** */ }

@@ -824,7 +824,7 @@ img {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -873,7 +873,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--background);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -918,7 +918,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--background);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -963,7 +963,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--background);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -999,6 +999,19 @@ ul::-webkit-scrollbar-thumb {
 @media (min-width: 481px) and (max-width: 767px) {
   .about-me-container {
     height: auto;
+  }
+  .about-me-container .about-me-box {
+    margin: 15px;
+  }
+  .about-me-container .about-me-box .about-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-me-container .about-me-box .about-wrapper .about-me {
+    border-bottom: 5px solid var(--background);
+    border-right: none;
   }
   .nav-bar.hamburger-menu {
     position: relative;
@@ -1065,7 +1078,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--background);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1169,6 +1182,7 @@ ul::-webkit-scrollbar-thumb {
     width: 96%;
   }
   .portfolio-container .project-wrapper .project-container .project .description-container .button-container {
+    width: 100%;
     margin: 10px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1186,7 +1200,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1245,7 +1259,7 @@ ul::-webkit-scrollbar-thumb {
     border: 2px solid var(--secondaryTextColor);
     font-family: var(--oswald);
     font-size: 20px;
-    background-color: var(--backgroundsecondary);
+    background-color: transparent;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;

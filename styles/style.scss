@@ -726,7 +726,7 @@ img {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--backgroundsecondary);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
@@ -784,7 +784,7 @@ ul::-webkit-scrollbar-thumb {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--background);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
@@ -833,7 +833,7 @@ ul::-webkit-scrollbar-thumb {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--background);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
@@ -881,7 +881,7 @@ ul::-webkit-scrollbar-thumb {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--background);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
@@ -920,6 +920,18 @@ ul::-webkit-scrollbar-thumb {
 @media (min-width: 481px) and (max-width: 767px) {
   .about-me-container {
     height: auto;
+    .about-me-box {
+      margin: 15px;
+      .about-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        .about-me {
+          border-bottom: 5px solid var(--background);
+          border-right: none;
+        }
+      }
+    }
+    
   }
   .nav-bar.hamburger-menu {
     position: relative;
@@ -981,7 +993,7 @@ ul::-webkit-scrollbar-thumb {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--background);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
@@ -1082,7 +1094,7 @@ ul::-webkit-scrollbar-thumb {
               width: 96%;
             }
             .button-container {
-              
+              width: 100%;
               margin: 10px auto;
               display: flex;
               justify-content: flex-start;
@@ -1097,7 +1109,7 @@ ul::-webkit-scrollbar-thumb {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--backgroundsecondary);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
@@ -1171,7 +1183,7 @@ ul::-webkit-scrollbar-thumb {
               border: 2px solid var(--secondaryTextColor);
               font-family: var(--oswald);
               font-size: 20px;
-              background-color: var(--backgroundsecondary);
+              background-color: transparent;
               border-radius: 5px;
               transition: 0.5s;
               padding: 5px 5px;
