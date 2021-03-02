@@ -2,13 +2,14 @@
   --primaryTextColor: #000;
   --secondaryTextColor: #f5f5f5;
   --specialText: #dd417d;
+  --specialTest: #3a1b27;
   --mainColor: #333;
   --secondaryColor: #eeeeee;
   --roboto: "Roboto", sans-serif;
   --oswald: "Oswald", sans-serif;
-  --background: #1b242f;
-  --backgroundsecondary: #233955;
-  --gradientColor: #1d2c3d;
+  --background: #0d161f;
+  --backgroundsecondary: #252934;
+  --gradientColor: #1d2129;
   --buttonBackground: #5174a1;
   --cardBackground: #d4d4d4;
   --hoverEffect: #616161;
@@ -78,11 +79,6 @@ ul {
   text-decoration: underline;
 }
 
-#particles-js {
-  height: 100%;
-  width: 100%;
-}
-
 .section-0 {
   position: fixed;
   top: 0;
@@ -108,6 +104,11 @@ ul {
   overflow: auto;
   height: 100vh;
   border-bottom: 1px solid var(--mainColor);
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
 }
 
 .section-2 {
@@ -143,8 +144,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1200px;
-  max-width: 80%;
+  max-width: auto;
   margin: 0 auto;
   color: var(--secondaryColor);
   font-family: var(--roboto);
@@ -212,6 +212,12 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation-name: text-popin;
+          animation-name: text-popin;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .btn {
@@ -220,16 +226,27 @@ ul {
   font-family: var(--oswald);
   font-size: 24px;
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 5px 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   text-decoration: none;
 }
 
 .btn:hover {
   background-color: var(--specialText);
+  border: 1px solid var(--specialText);
   cursor: pointer;
+}
+
+.btn:hover .fa-arrow-right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-arrow-right {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .project-link {
@@ -309,11 +326,14 @@ ul {
   font-size: 42px;
   font-weight: 500;
   font-family: var(--oswald);
+  text-align: justify;
+  padding: 25px;
 }
 
 .about-me-container .about-me-box .about-wrapper .about-me .detail,
 .about-me-container .about-me-box .about-wrapper .more-about-me .detail {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
   font-family: var(--roboto);
   letter-spacing: 1px;
   margin: auto 5px auto 5px;
@@ -377,6 +397,37 @@ ul {
   margin: 0 auto;
 }
 
+.portfolio-container .project-select-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: var(--roboto);
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--background);
+  width: 60%;
+  padding: 5px;
+  margin: 10px;
+}
+
+.portfolio-container .project-select-container div {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.portfolio-container .project-select-container div:hover {
+  color: var(--secondaryTextColor);
+  border-radius: 10px;
+  background-color: var(--specialText);
+  cursor: pointer;
+}
+
 .portfolio-container .project-wrapper {
   display: -ms-grid;
   display: grid;
@@ -420,8 +471,8 @@ ul {
   height: 55%;
   position: relative;
   opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .portfolio-container .project-wrapper .project-container .project .image-container:hover {
@@ -735,6 +786,11 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .portfolio-container .project-select-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
   .portfolio-container .project-wrapper {
     -ms-grid-columns: 1fr 1fr;
