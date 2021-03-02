@@ -598,8 +598,8 @@ ul {
 }
 
 .portfolio-container .project-wrapper .project-container:hover {
-  -webkit-box-shadow: 0 0 10px 3px var(--background);
-          box-shadow: 0 0 10px 3px var(--background);
+  -webkit-box-shadow: 0 0 6px 3px var(--background);
+          box-shadow: 0 0 6px 3px var(--background);
 }
 
 img {
