@@ -103,7 +103,6 @@ ul {
   background: linear-gradient(to top, var(--backgroundsecondary) 10%, var(--gradientColor) 90%);
   overflow: auto;
   height: 100vh;
-  border-bottom: 1px solid var(--mainColor);
 }
 
 #particles-js {
