@@ -83,7 +83,7 @@ const projectData = [
         id: 9,
         type: "Python",
         name: "BlackJack",
-        image: "./images/Python_BlackJack.PNG",
+        image: "./images/BlackJack.PNG",
         technologies: ["Python"],
         description: "This project was made using python. This project generates a deck of cards following an object-oriented principles delivering a robust card system which can be used in any card game.",
         github: "https://github.com/DevalPanchal/Python_Blackjack",
