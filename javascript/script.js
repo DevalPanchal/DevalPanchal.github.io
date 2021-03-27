@@ -1,6 +1,5 @@
 const scrollElems = document.querySelectorAll('.scroll');
 const navBar = document.getElementById('navbar');
-const projectWrapper = document.querySelector('.project-wrapper');
 
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById('js-navbar-toggle');

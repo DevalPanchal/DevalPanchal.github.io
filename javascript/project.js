@@ -97,6 +97,7 @@ const javascriptProjects = document.getElementById('javascript-projects');
 const nodeProjects = document.getElementById('node-projects');
 const pythonProjects = document.getElementById('python-projects');
 
+const projectWrapper = document.querySelector('.project-wrapper');
 
 const viewAllProjects = () => {
     console.log("you are view all projects");
@@ -189,10 +190,6 @@ function appendFilteredData(filteredData) {
         projectWrapper.appendChild(projectDiv);
     });
 }
-
-
-
-
 
 function resetState() {
     projectWrapper.innerHTML = ``;
