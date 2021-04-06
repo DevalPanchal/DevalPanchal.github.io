@@ -512,8 +512,8 @@ html {
   gap: 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 10px 0;
   width: 50%;
 }
@@ -1420,6 +1420,35 @@ html {
   }
   .footer-container {
     height: 20%;
+  }
+  .project-section .project-container .project-select-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-section .project-container .project-select-container .project-select {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px);
+    width: 100px;
+    padding: 5px;
+  }
+  .project-section .project-container .project-wrapper {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .project-section .project-container .project-wrapper .project .project-information .text .technologies-used {
+    overflow-x: scroll;
   }
 }
 

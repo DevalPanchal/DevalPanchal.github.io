@@ -88,6 +88,16 @@ const projectData = [
         description: "This project was made using python. This project generates a deck of cards following an object-oriented principles delivering a robust card system which can be used in any card game.",
         github: "https://github.com/DevalPanchal/Python_Blackjack",
         location: "https://repl.it/@DevalPanchal/PythonBlackjack#Game.py"
+    },
+    {
+        id: 10,
+        type: "Java",
+        name: "Spam Filter",
+        image: "./images/SpamFilter.PNG",
+        technologies: ['Java', 'Javafx'],
+        description: "This is a simple spam detector developed using java and the interface was managed using javaFX. The purpose of this project was to understand File I/O and learn the MVC fundamentals using a provided dataset of emails for the model.",
+        github: "https://github.com/DevalPanchal/spam_filter",
+        location: "https://github.com/DevalPanchal/spam_filter"
     }
 ];
 
@@ -96,6 +106,7 @@ const reactProjects = document.getElementById('react-projects');
 const javascriptProjects = document.getElementById('javascript-projects');
 const nodeProjects = document.getElementById('node-projects');
 const pythonProjects = document.getElementById('python-projects');
+const javaProjects = document.getElementById("java-projects");
 
 const projectWrapper = document.querySelector('.project-wrapper');
 
@@ -134,6 +145,14 @@ const viewNodeProjects = () => {
 const viewPythonProjects = () => {
     console.log("you  are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "Python");
+    resetState();
+    appendFilteredData(filteredData);
+    console.log(filteredData);
+}
+
+const viewJavaProjects = () => {
+    console.log("you are viewing java projects");
+    let filteredData = projectData.filter(p => p.type == "Java");
     resetState();
     appendFilteredData(filteredData);
     console.log(filteredData);
@@ -200,3 +219,4 @@ reactProjects.addEventListener('click', viewReactProjects);
 javascriptProjects.addEventListener('click', viewJavaScriptProjects);
 nodeProjects.addEventListener('click', viewNodeProjects);
 pythonProjects.addEventListener('click', viewPythonProjects);
+javaProjects.addEventListener('click', viewJavaProjects);

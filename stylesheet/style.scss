@@ -393,7 +393,7 @@ html {
         .project-select-container {
             gap: 15px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             margin: 10px 0;
             width: 50%;
             .project-select {
@@ -1120,6 +1120,39 @@ html {
     }
     .footer-container {
         height: 20%;
+    }
+    .project-section {
+        .project-container {
+            .project-select-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .project-select {
+                    flex: 0 0 calc(25% - 20px);
+                    width: 100px;
+                    padding: 5px;
+                }
+            }
+            //border: 1px solid blue;
+            .project-wrapper {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                //border: 1px dashed purple;
+                padding: 10px;
+                .project {
+                    .project-information {
+                        .text {
+                            .technologies-used {
+                                overflow-x: scroll;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
