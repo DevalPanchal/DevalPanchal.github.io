@@ -94,7 +94,7 @@ const projectData = [
         type: "Java",
         name: "Spam Filter",
         image: "./images/SpamFilter.PNG",
-        technologies: ['Java', 'Javafx'],
+        technologies: ['Java', 'Javafx', "FXML"],
         description: "This is a simple spam detector developed using java and the interface was managed using javaFX. The purpose of this project was to understand File I/O and learn the MVC fundamentals using a provided dataset of emails for the model.",
         github: "https://github.com/DevalPanchal/spam_filter",
         location: null
