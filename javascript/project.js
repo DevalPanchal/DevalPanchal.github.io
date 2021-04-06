@@ -31,13 +31,13 @@ const projectData = [
     },
     {
         id: 4,
-        type: "JavaScript",
-        name: "Insertion Sort Visualisation",
-        image: "./images/Sorting_Algorithm.PNG",
-        technologies: ["JavaScript", "D3.js", "HTML", "SCSS"],
-        description: "This project was made using basic html/css and javascript along with javascript's data visualisation library. The project displays how the insertion sort algorithm works by giving the user a visual representation of the algorithm works behind the scenes step by step.",
-        github: "https://github.com/DevalPanchal/Insertion-Sort-Visualisation",
-        location: "https://codepen.io/devalpanchal2401/full/vYXQBQL"
+        type: "Java",
+        name: "Spam Filter",
+        image: "./images/SpamFilter.PNG",
+        technologies: ['Java', 'Javafx', "FXML"],
+        description: "This is a simple spam detector developed using java and the interface was managed using javaFX. The purpose of this project was to understand File I/O and learn the MVC fundamentals using a provided dataset of emails for the model.",
+        github: "https://github.com/DevalPanchal/spam_filter",
+        location: null
     },
     {
         id: 5,
@@ -52,12 +52,12 @@ const projectData = [
     {
         id: 6,
         type: "JavaScript",
-        name: "JavaScript Calculator",
-        image: "./images/Javascript_Calculator.PNG",
-        technologies: ["JavaScript", "JQuery", "HTML/CSS"],
-        description: "This project was made using HTML/CSS, Javascript and Jquery. This is a simple javascript calculator capable to doing basic arithmetic operations (addition, subtraction, multiplication and division), following BEDMAS/PEMDAS rule.",
-        github: "https://github.com/DevalPanchal/Javascript-Calculator",
-        location: "https://codepen.io/devalpanchal2401/pen/bGwKWMQ"
+        name: "Insertion Sort Visualisation",
+        image: "./images/Sorting_Algorithm.PNG",
+        technologies: ["JavaScript", "D3.js", "HTML", "SCSS"],
+        description: "This project was made using basic html/css and javascript along with javascript's data visualisation library. The project displays how the insertion sort algorithm works by giving the user a visual representation of the algorithm works behind the scenes step by step.",
+        github: "https://github.com/DevalPanchal/Insertion-Sort-Visualisation",
+        location: "https://codepen.io/devalpanchal2401/full/vYXQBQL"
     },
     {
         id: 7,
@@ -81,6 +81,16 @@ const projectData = [
     },
     {
         id: 9,
+        type: "JavaScript",
+        name: "JavaScript Calculator",
+        image: "./images/Javascript_Calculator.PNG",
+        technologies: ["JavaScript", "JQuery", "HTML/CSS"],
+        description: "This project was made using HTML/CSS, Javascript and Jquery. This is a simple javascript calculator capable to doing basic arithmetic operations (addition, subtraction, multiplication and division), following BEDMAS/PEMDAS rule.",
+        github: "https://github.com/DevalPanchal/Javascript-Calculator",
+        location: "https://codepen.io/devalpanchal2401/pen/bGwKWMQ"
+    },
+    {
+        id: 10,
         type: "Python",
         name: "BlackJack",
         image: "./images/Test.PNG",
@@ -89,16 +99,7 @@ const projectData = [
         github: "https://github.com/DevalPanchal/Python_Blackjack",
         location: "https://repl.it/@DevalPanchal/PythonBlackjack#Game.py"
     },
-    {
-        id: 10,
-        type: "Java",
-        name: "Spam Filter",
-        image: "./images/SpamFilter.PNG",
-        technologies: ['Java', 'Javafx', "FXML"],
-        description: "This is a simple spam detector developed using java and the interface was managed using javaFX. The purpose of this project was to understand File I/O and learn the MVC fundamentals using a provided dataset of emails for the model.",
-        github: "https://github.com/DevalPanchal/spam_filter",
-        location: null
-    }
+    
 ];
 
 const allProjects = document.getElementById('all-projects');
