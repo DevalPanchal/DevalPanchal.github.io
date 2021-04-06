@@ -639,7 +639,8 @@ html {
   bottom: 0;
   left: 0;
   color: #f5f5f5;
-  border: 1px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
+  background-color: #000;
   padding: 0 5px;
   border-radius: 1px;
   text-decoration: none;
@@ -649,7 +650,7 @@ html {
 
 .project-section .project-container .project-wrapper .text .link-github:hover {
   background-color: #4185dd;
-  border: 1px solid #4185dd;
+  border: 2px solid #4185dd;
 }
 
 .project-section .project-container .project-wrapper .text .link-site {
@@ -657,7 +658,8 @@ html {
   bottom: 0;
   left: 100px;
   color: #f5f5f5;
-  border: 1px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
+  background-color: #000;
   padding: 0 5px;
   border-radius: 1px;
   text-decoration: none;
@@ -667,7 +669,7 @@ html {
 
 .project-section .project-container .project-wrapper .text .link-site:hover {
   background-color: #4185dd;
-  border: 1px solid #4185dd;
+  border: 2px solid #4185dd;
 }
 
 .contact-me-container {

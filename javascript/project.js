@@ -97,7 +97,7 @@ const projectData = [
         technologies: ['Java', 'Javafx'],
         description: "This is a simple spam detector developed using java and the interface was managed using javaFX. The purpose of this project was to understand File I/O and learn the MVC fundamentals using a provided dataset of emails for the model.",
         github: "https://github.com/DevalPanchal/spam_filter",
-        location: "https://github.com/DevalPanchal/spam_filter"
+        location: null
     }
 ];
 
@@ -160,7 +160,7 @@ const viewJavaProjects = () => {
 
 projectData.forEach((projects) => {
     var projectDiv = document.createElement('div');
-
+    
     projectDiv.innerHTML = `
     <div class="project">
         <img class="project-img" src="${projects.image}" alt="${projects.name}"/>
@@ -172,7 +172,7 @@ projectData.forEach((projects) => {
                 </div>
                 <p>${projects.description}</p>
                 <a href=${projects.github} rel="noopener noreferrer" target="_blank" class="link-github">Github</a>
-                <a href=${projects.location} rel="noopener noreferrer" target="_blank" class="link-site">View Site</a>
+                ${projects.location ? `<a href=${projects.location} rel="noopener noreferrer" target="_blank" class="link-site">View Site</a>`: ""}
             </div>
         </div>
     </div>
@@ -198,7 +198,8 @@ function appendFilteredData(filteredData) {
                     </div>
                     <p>${filtered.description}</p>
                     <a href=${filtered.github} rel="noopener noreferrer" target="_blank" class="link-github">Github</a>
-                    <a href=${filtered.location} rel="noopener noreferrer" target="_blank" class="link-site">View Site</a>
+                    
+                    ${filtered.location ? `<a href=${filtered.location} rel="noopener noreferrer" target="_blank" class="link-site">View Site</a>`: ""}
                 </div>
                 
             </div>

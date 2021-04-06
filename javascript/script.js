@@ -20,7 +20,6 @@ navBarToggle.addEventListener("click", () => {
     });
 });
 
-
 for (let i = 0; i < scrollElems.length; i++) {
     const elem = scrollElems[i];
 

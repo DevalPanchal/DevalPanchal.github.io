@@ -496,14 +496,15 @@ html {
                     bottom: 0;
                     left: 0;
                     color: $primaryTextColor;
-                    border: 1px solid $primaryTextColor;
+                    border: 2px solid $primaryTextColor;
+                    background-color: $primaryWebColor;
                     padding: 0 5px;
                     border-radius: 1px;
                     text-decoration: none;
                     transition: 0.2s ease-in-out;
                     &:hover {
                         background-color: $primaryBtnBackgroundColor;
-                        border: 1px solid $primaryBtnBackgroundColor;
+                        border: 2px solid $primaryBtnBackgroundColor;
                     }
                 }
                 .link-site {
@@ -511,14 +512,15 @@ html {
                     bottom: 0;
                     left: 100px;
                     color: $primaryTextColor;
-                    border: 1px solid $primaryTextColor;
+                    border: 2px solid $primaryTextColor;
+                    background-color: $primaryWebColor;
                     padding: 0 5px;
                     border-radius: 1px;
                     text-decoration: none;
                     transition: 0.2s ease-in-out;
                     &:hover {
                         background-color: $primaryBtnBackgroundColor;
-                        border: 1px solid $primaryBtnBackgroundColor;
+                        border: 2px solid $primaryBtnBackgroundColor;
                     }
                 }
             }
