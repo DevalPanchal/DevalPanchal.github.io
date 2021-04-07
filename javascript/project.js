@@ -130,7 +130,7 @@ const viewAllProjects = () => {
 }
 
 const viewReactProjects = () => {
-    console.log("you  are viewing react projects");
+    console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "React");
     resetState();
     appendFilteredData(filteredData);
@@ -138,7 +138,7 @@ const viewReactProjects = () => {
 }
 
 const viewJavaScriptProjects = () => {
-    console.log("you  are viewing react projects");
+    console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "JavaScript");
     resetState();
     appendFilteredData(filteredData);
@@ -146,7 +146,7 @@ const viewJavaScriptProjects = () => {
 }
 
 const viewNodeProjects = () => {
-    console.log("you  are viewing react projects");
+    console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "Node");
     resetState();
     appendFilteredData(filteredData);
@@ -154,7 +154,7 @@ const viewNodeProjects = () => {
 }
 
 const viewPythonProjects = () => {
-    console.log("you  are viewing react projects");
+    console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "Python");
     resetState();
     appendFilteredData(filteredData);

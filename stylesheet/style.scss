@@ -18,9 +18,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $primarySignatureColor;
+    background-color: $tertiaryBackgroundColor;
     border-radius: 15px;
-    border: 1px solid $scrollBarColor;
+    //border: 1px solid $scrollBarColor;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: $hoverColor;
 }
 
 body,
