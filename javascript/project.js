@@ -41,6 +41,16 @@ const projectData = [
     },
     {
         id: 5,
+        type: "Java",
+        name: "File Sharer",
+        image: "./images/FileSharing.PNG",
+        technologies: ["Java", "Javafx", "FXML"],
+        description: "Developed a simple file sharing application using java and javafx. This project applied sockets multithreading and file i/o skills and built with an MVC structure in mind. This project depends on gradle and the files associated with it.",
+        github: "https://github.com/DevalPanchal/Assignment2",
+        location: null
+    },
+    {
+        id: 6,
         type: "Node",
         name: "Mini Message Board",
         image: "./images/Mini_Message_Board.PNG",
@@ -50,7 +60,7 @@ const projectData = [
         location: "https://stormy-citadel-85540.herokuapp.com/"
     },
     {
-        id: 6,
+        id: 7,
         type: "JavaScript",
         name: "Insertion Sort Visualisation",
         image: "./images/Sorting_Algorithm.PNG",
@@ -60,7 +70,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/full/vYXQBQL"
     },
     {
-        id: 7,
+        id: 8,
         type: "JavaScript",
         name: "Quiz App",
         image: "./images/Simple_Quiz_App.PNG",
@@ -70,7 +80,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/project/editor/ANwPeN#"
     },
     {
-        id: 8,
+        id: 9,
         type: "JavaScript",
         name: "United States GDP Visualization",
         image: "./images/Data_Visualisation.PNG",
@@ -80,7 +90,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/pen/yLaRjoJ"
     },
     {
-        id: 9,
+        id: 10,
         type: "JavaScript",
         name: "JavaScript Calculator",
         image: "./images/Javascript_Calculator.PNG",
@@ -90,7 +100,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/pen/bGwKWMQ"
     },
     {
-        id: 10,
+        id: 11,
         type: "Python",
         name: "BlackJack",
         image: "./images/Test.PNG",
