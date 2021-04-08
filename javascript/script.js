@@ -68,6 +68,10 @@ function easeInOutExpo(x) {
       : (2 - Math.pow(2, -20 * x + 10)) / 2;
 }
 
+function easeOutQuart(x) {
+    return 1 - Math.pow(1 - x, 4);
+}
+
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 2));
 }
@@ -78,13 +82,13 @@ const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startS
 
     progress = Math.min(progress, 1);
 
-    const ease = easeInOutExpo(progress);
+    const ease = easeOutQuart(progress);
 
     window.scroll(0, startScrollOffset + (scrollEndElemTop * ease));
     if (runtime < duration) {
         requestAnimationFrame((timestamp) => {
             const currentTime = timestamp || new Date().getTime();
             scrollToElem(startTime, currentTime, duration, scrollEndElemTop, startScrollOffset);
-        })
+        });
     }
 }
