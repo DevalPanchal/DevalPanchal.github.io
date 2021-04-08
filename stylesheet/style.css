@@ -215,6 +215,60 @@ html {
   background-color: #000;
 }
 
+@-webkit-keyframes rotateText {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
 .home-container {
   min-height: 100%;
   overflow: hidden;
@@ -249,6 +303,24 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.home-container .flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+.home-container .flip > div > div {
+  color: #f5f5f5;
+  display: inline-block;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+}
+
+.home-container .flip div:first-child {
+  -webkit-animation: rotateText 6s ease-in-out infinite;
+          animation: rotateText 6s ease-in-out infinite;
 }
 
 .home-container .view-portfolio-btn {
@@ -353,6 +425,20 @@ html {
 
 .about-me .skills-and-technologies .about-me-information .passion-container .passion .fas {
   font-size: 60px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-me .skills-and-technologies .about-me-information .passion-container .passion .fa-keyboard:hover {
+  color: #4185dd;
+}
+
+.about-me .skills-and-technologies .about-me-information .passion-container .passion .fa-chart-bar:hover {
+  color: #cf5050;
+}
+
+.about-me .skills-and-technologies .about-me-information .passion-container .passion .fa-drafting-compass:hover {
+  color: #b3dd75;
 }
 
 .about-me .skills-and-technologies .about-me-information .passion-container .passion h2 {
