@@ -209,10 +209,8 @@ function appendFilteredData(filteredData) {
                     </div>
                     <p>${filtered.description}</p>
                     <a href=${filtered.github} rel="noopener noreferrer" target="_blank" class="link-github">Github</a>
-                    
                     ${filtered.location ? `<a href=${filtered.location} rel="noopener noreferrer" target="_blank" class="link-site">View Site</a>`: ""}
                 </div>
-                
             </div>
         </div>
         `;
