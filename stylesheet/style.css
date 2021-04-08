@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body::-webkit-scrollbar {
   width: 6px;
 }
@@ -23,7 +24,6 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   line-height: 1.8em;
   font-family: "Montserrat", sans-serif;
@@ -42,45 +42,69 @@ html {
   cursor: pointer;
 }
 
-.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git {
+.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database {
   color: #f5f5f5;
   border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.fa-html5 {
-  background-color: #e34c26;
+.fa-html5:hover, .fa-css3:hover, .fa-js:hover, .fa-react:hover, .fa-node-js:hover, .fa-python:hover, .fa-java:hover, .fa-sass:hover, .fa-git-alt:hover, .fa-linux:hover, .fa-database:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
-.fa-css3 {
-  background-color: #264de4;
+.fa-html5:hover:before, .fa-css3:hover:before, .fa-js:hover:before, .fa-react:hover:before, .fa-node-js:hover:before, .fa-python:hover:before, .fa-java:hover:before, .fa-sass:hover:before, .fa-git-alt:hover:before, .fa-linux:hover:before, .fa-database:hover:before {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
 }
 
-.fa-js {
-  background-color: #f0db4f;
+.fa-html5:hover:before {
+  content: "HTML5";
 }
 
-.fa-react {
-  background-color: #61dbfb;
+.fa-css3:hover:before {
+  content: "CSS3";
 }
 
-.fa-node-js {
-  background-color: #68a063;
+.fa-js:hover:before {
+  content: "JavaScript";
 }
 
-.fa-python {
-  background-color: #4b8bbe;
+.fa-react:hover:before {
+  content: "React";
 }
 
-.fa-java {
-  background-color: #f89820;
+.fa-node-js:hover:before {
+  content: "NodeJS";
 }
 
-.fa-sass {
-  background-color: #c69;
+.fa-python:hover:before {
+  content: "Python";
 }
 
-.fa-git {
-  background-color: #f34f29;
+.fa-java:hover:before {
+  content: "Java";
+}
+
+.fa-sass:hover:before {
+  content: "Sass";
+}
+
+.fa-git-alt:hover:before {
+  content: "Git";
+}
+
+.fa-linux {
+  color: #000;
+}
+
+.fa-linux:hover:before {
+  content: "Linux";
+}
+
+.fa-database:hover:before {
+  content: "MongoDB";
 }
 
 .fa-github {
@@ -539,20 +563,73 @@ html {
 }
 
 .about-me .technologies-container .tech-wrapper .tech-container .technologies li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px;
   list-style-type: none;
   text-align: center;
   font-size: 60px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.about-me .technologies-container .tech-wrapper .tech-container .technologies li .fab {
-  padding: 5px;
+  border-radius: 2px;
+  margin: 2px;
 }
 
 .about-me .technologies-container .tech-wrapper .tech-container .technologies li:hover {
+  -webkit-box-shadow: 0 0 2px 1px #000;
+          box-shadow: 0 0 2px 1px #000;
   text-shadow: 1px 1px 2px #000;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.html-icon {
+  background-color: #e34c26;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.css-icon {
+  background-color: #264de4;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.js-icon {
+  background-color: #f0db4f;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.react-icon {
+  background-color: #61dbfb;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.nodejs-icon {
+  background-color: #68a063;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.python-icon {
+  background-color: #4b8bbe;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.java-icon {
+  background-color: #f89820;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.sass-icon {
+  background-color: #c69;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.linux-icon {
+  background-color: white;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.database-icon {
+  background-color: #4DB33D;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.git-icon {
+  background-color: #f34f29;
 }
 
 .about-me .technologies-container .tech-wrapper .link-container {

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 $primaryTextColor: #f5f5f5;
 $primaryBtnBackgroundColor: #4185dd;
 $primaryAboutMeContainerBackgroundColor: #a0a0a09d;
@@ -7,7 +10,8 @@ $scrollBarColor: #ffffff;
 $secondaryBackgroundColor: #f0f0f0;
 $tertiaryBackgroundColor: #222;
 $hoverColor: #333;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+$roboto: 'Roboto';
+$poppins: 'Poppins', sans-serif; 
 
 body::-webkit-scrollbar {
     width: 6px;
@@ -33,8 +37,6 @@ html {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;
     line-height: 1.8em;
     // scroll-behavior: smooth;
@@ -50,45 +52,96 @@ html {
     }
 }
 
-.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git {
+.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database {
     color: $primaryTextColor;
     border-radius: 3px;
+    transition: 0.3s;
+    
+    &:hover {
+        transform: rotate(360deg);
+    }
+    &:hover:before {
+        font-family: $poppins;
+        font-size: 24px;
+    }
 }
 
 .fa-html5 {
-    background-color:#e34c26 ;
+    // background-color:#e34c26;
+    &:hover:before {
+        content: "HTML5";
+    }
 }
 
 .fa-css3 {
-    background-color: #264de4;
+    //background-color: #264de4;
+    &:hover:before{
+        content: "CSS3";
+    }
 }
 
 .fa-js {
-    background-color: #f0db4f;
+    //background-color: #f0db4f;
+    &:hover:before{
+        content: "JavaScript";
+    }
 }
 
 .fa-react {
-    background-color: #61dbfb;
+    //background-color: #61dbfb;
+    &:hover:before{
+        content: "React";
+    }
 }
 
 .fa-node-js {
-    background-color: #68a063;
+    //background-color: #68a063;
+    &:hover:before{
+        content: "NodeJS";
+    }
 }
 
 .fa-python {
-    background-color: #4b8bbe;
+    // background-color: #4b8bbe;
+    &:hover:before{
+        content: "Python";
+    }
 }
 
 .fa-java {
-    background-color: #f89820;
+    //background-color: #f89820;
+    &:hover:before{
+        content: "Java";
+    }
 }
 
 .fa-sass {
-    background-color: #c69;
+    //background-color: #c69;
+    &:hover:before{
+        content: "Sass";
+    }
 }
 
-.fa-git {
-    background-color: #f34f29;
+.fa-git-alt {
+    // background-color: #f34f29;
+    &:hover:before{
+        content: "Git";
+    }
+}
+
+.fa-linux {
+    // background-color: white;
+    color: $primaryWebColor;
+    &:hover:before{
+        content: "Linux";
+    }
+}
+
+.fa-database {
+    // background-color: #4DB33D;
+    &:hover:before{
+        content: "MongoDB";
+    }
 }
 
 .fa-github {
@@ -388,6 +441,9 @@ html {
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     padding: 0;
                     li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         //border: 1px solid blue;
                         padding: 5px;
                         //padding: 10px;
@@ -395,13 +451,47 @@ html {
                         text-align: center;
                         font-size: 60px;
                         transition: 0.2s;
-                        .fab {
-                            padding: 5px;
-                        }
+                        border-radius: 2px;
+                        margin: 2px;
+                      
                         &:hover {
+                            box-shadow: 0 0 2px 1px $primaryWebColor;
                             text-shadow: 1px 1px 2px $primaryWebColor;
                         }
                         
+                    }
+                    li.html-icon {
+                        background-color:#e34c26;
+                    }
+                    li.css-icon {
+                        background-color: #264de4;
+                    }
+                    li.js-icon {
+                        background-color: #f0db4f;
+                    }
+                    li.react-icon {
+                        background-color: #61dbfb;
+                    }
+                    li.nodejs-icon {
+                        background-color: #68a063;
+                    }
+                    li.python-icon {
+                        background-color: #4b8bbe;
+                    }
+                    li.java-icon {
+                        background-color: #f89820;
+                    }
+                    li.sass-icon {
+                        background-color: #c69;
+                    }
+                    li.linux-icon {
+                        background-color: white;
+                    }
+                    li.database-icon {
+                        background-color: #4DB33D;
+                    }
+                    li.git-icon {
+                        background-color: #f34f29;
                     }
                 }
             }
