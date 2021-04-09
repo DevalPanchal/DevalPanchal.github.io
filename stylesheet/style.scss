@@ -52,7 +52,8 @@ html {
     }
 }
 
-.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database {
+
+.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database, .fa-cuttlefish {
     color: $primaryTextColor;
     border-radius: 3px;
     transition: 0.3s;
@@ -62,7 +63,7 @@ html {
     }
     &:hover:before {
         font-family: $poppins;
-        font-size: 24px;
+        font-size: 21px;
     }
 }
 
@@ -141,6 +142,12 @@ html {
     // background-color: #4DB33D;
     &:hover:before{
         content: "MongoDB";
+    }
+}
+
+.fa-cuttlefish {
+    &:hover:before {
+        content: "C++";
     }
 }
 
@@ -493,9 +500,11 @@ html {
                     li.git-icon {
                         background-color: #f34f29;
                     }
+                    li.cpp-icon {
+                        background-color: #165CAA;
+                    }
                 }
             }
-
             .link-container {
                 width: 100%;
                 //border: 1px solid pink;

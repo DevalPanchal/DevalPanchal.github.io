@@ -42,21 +42,21 @@ html {
   cursor: pointer;
 }
 
-.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database {
+.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database, .fa-cuttlefish {
   color: #f5f5f5;
   border-radius: 3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.fa-html5:hover, .fa-css3:hover, .fa-js:hover, .fa-react:hover, .fa-node-js:hover, .fa-python:hover, .fa-java:hover, .fa-sass:hover, .fa-git-alt:hover, .fa-linux:hover, .fa-database:hover {
+.fa-html5:hover, .fa-css3:hover, .fa-js:hover, .fa-react:hover, .fa-node-js:hover, .fa-python:hover, .fa-java:hover, .fa-sass:hover, .fa-git-alt:hover, .fa-linux:hover, .fa-database:hover, .fa-cuttlefish:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.fa-html5:hover:before, .fa-css3:hover:before, .fa-js:hover:before, .fa-react:hover:before, .fa-node-js:hover:before, .fa-python:hover:before, .fa-java:hover:before, .fa-sass:hover:before, .fa-git-alt:hover:before, .fa-linux:hover:before, .fa-database:hover:before {
+.fa-html5:hover:before, .fa-css3:hover:before, .fa-js:hover:before, .fa-react:hover:before, .fa-node-js:hover:before, .fa-python:hover:before, .fa-java:hover:before, .fa-sass:hover:before, .fa-git-alt:hover:before, .fa-linux:hover:before, .fa-database:hover:before, .fa-cuttlefish:hover:before {
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .fa-html5:hover:before {
@@ -105,6 +105,10 @@ html {
 
 .fa-database:hover:before {
   content: "MongoDB";
+}
+
+.fa-cuttlefish:hover:before {
+  content: "C++";
 }
 
 .fa-github {
@@ -630,6 +634,10 @@ html {
 
 .about-me .technologies-container .tech-wrapper .tech-container .technologies li.git-icon {
   background-color: #f34f29;
+}
+
+.about-me .technologies-container .tech-wrapper .tech-container .technologies li.cpp-icon {
+  background-color: #165CAA;
 }
 
 .about-me .technologies-container .tech-wrapper .link-container {
