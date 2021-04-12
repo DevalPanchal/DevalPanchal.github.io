@@ -263,6 +263,8 @@ html {
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
 }
+
+
 .home-container {
     min-height: 100%;
     overflow: hidden;
@@ -281,6 +283,12 @@ html {
         gap: 24px;
         align-items: center;
         text-align: center;
+        .border {
+            margin: 0;
+            padding: 0;
+            
+            
+        }
     }
     .flip {
         height: 50px;

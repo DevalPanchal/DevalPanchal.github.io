@@ -333,6 +333,11 @@ html {
   text-align: center;
 }
 
+.home-container .text .border {
+  margin: 0;
+  padding: 0;
+}
+
 .home-container .flip {
   height: 50px;
   overflow: hidden;
