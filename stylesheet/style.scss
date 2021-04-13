@@ -53,16 +53,17 @@ html {
 }
 
 
-.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database, .fa-cuttlefish {
+.fa-html5, .fa-css3, .fa-js, .fa-react, .fa-node-js, .fa-python, .fa-java, .fa-sass, .fa-git-alt, .fa-linux, .fa-database, .fa-cuttlefish, .fa-bootstrap {
     color: $primaryTextColor;
     border-radius: 3px;
     transition: 0.3s;
-    
+
     &:hover {
         transform: rotate(360deg);
     }
     &:hover:before {
         font-family: $poppins;
+        font-weight: 300;
         font-size: 21px;
     }
 }
@@ -148,6 +149,12 @@ html {
 .fa-cuttlefish {
     &:hover:before {
         content: "C++";
+    }
+}
+
+.fa-bootstrap {
+    &:hover::before {
+        content: "Bootstrap"
     }
 }
 
@@ -510,6 +517,9 @@ html {
                     }
                     li.cpp-icon {
                         background-color: #165CAA;
+                    }
+                    li.bootstrap-icon {
+                        background-color: #563d7c;
                     }
                 }
             }
