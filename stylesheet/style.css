@@ -827,6 +827,17 @@ html {
   transform: translate(-50%, -50%);
 }
 
+.project-section .project-container .project-wrapper .text .member-link {
+  color: #4185dd;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+.project-section .project-container .project-wrapper .text .member-link:hover {
+  color: #3074c2;
+}
+
 .project-section .project-container .project-wrapper .text p {
   height: 120px;
   overflow-y: scroll;

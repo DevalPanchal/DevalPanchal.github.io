@@ -3,6 +3,7 @@
 
 $primaryTextColor: #f5f5f5;
 $primaryBtnBackgroundColor: #4185dd;
+$primaryBtnBackgroundHover: #3074c2;
 $primaryAboutMeContainerBackgroundColor: #a0a0a09d;
 $primarySignatureColor: #0d161f;
 $primaryWebColor: #000;
@@ -652,6 +653,14 @@ html {
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
+                .member-link {
+                    color: $primaryBtnBackgroundColor;
+                    transition: 0.1s;
+                    text-decoration: none;
+                    &:hover {
+                        color: $primaryBtnBackgroundHover;
+                    }
+                }
                 p {
                     height: 120px;
                     overflow-y: scroll;

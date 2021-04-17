@@ -32,6 +32,16 @@ const projectData = [
     {
         id: 4,
         type: "Java",
+        name: "Pictionary Clone",
+        image: "./images/pictionary.PNG",
+        technologies: ["Java", "Javafx", "FXML", "CSS"],
+        description: "Responsible for the front end design for a simple multiplayer pictionary game made as group project with users: <a href='https://github.com/jkaterberg' class='member-link'>jkaterberg</a>, <a href='https://github.com/daniel-earley' class='member-link'>daniel-earley</a>, <a href='https://github.com/SJustinWong' class='member-link'>SJustinWong</a>. This game Follows the standard pictionary game loop, one player is selected to draw an image from a random word. The image is streamed to all other players, who are able to make guesses about the original word. Once the word is guessed, the next player is given a word to draw and the loop repeats",
+        github: "https://github.com/DevalPanchal/not-pictionary",
+        location: null
+    },
+    {
+        id: 5,
+        type: "Java",
         name: "Spam Filter",
         image: "./images/SpamFilter.PNG",
         technologies: ['Java', 'Javafx', "FXML"],
@@ -40,7 +50,7 @@ const projectData = [
         location: null
     },
     {
-        id: 5,
+        id: 6,
         type: "Java",
         name: "File Sharer",
         image: "./images/FileSharing.PNG",
@@ -50,7 +60,7 @@ const projectData = [
         location: null
     },
     {
-        id: 6,
+        id: 7,
         type: "Node",
         name: "Mini Message Board",
         image: "./images/Mini_Message_Board.PNG",
@@ -60,7 +70,7 @@ const projectData = [
         location: "https://stormy-citadel-85540.herokuapp.com/"
     },
     {
-        id: 7,
+        id: 8,
         type: "JavaScript",
         name: "Insertion Sort Visualisation",
         image: "./images/Sorting_Algorithm.PNG",
@@ -70,7 +80,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/full/vYXQBQL"
     },
     {
-        id: 8,
+        id: 9,
         type: "JavaScript",
         name: "Quiz App",
         image: "./images/Simple_Quiz_App.PNG",
@@ -80,7 +90,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/project/editor/ANwPeN#"
     },
     {
-        id: 9,
+        id: 10,
         type: "JavaScript",
         name: "United States GDP Visualization",
         image: "./images/Data_Visualisation.PNG",
@@ -90,7 +100,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/pen/yLaRjoJ"
     },
     {
-        id: 10,
+        id: 11,
         type: "JavaScript",
         name: "JavaScript Calculator",
         image: "./images/Javascript_Calculator.PNG",
@@ -100,7 +110,7 @@ const projectData = [
         location: "https://codepen.io/devalpanchal2401/pen/bGwKWMQ"
     },
     {
-        id: 11,
+        id: 12,
         type: "Python",
         name: "BlackJack",
         image: "./images/Test.PNG",
@@ -108,8 +118,7 @@ const projectData = [
         description: "This project was made using python. This project generates a deck of cards following an object-oriented principles delivering a robust card system which can be used in any card game.",
         github: "https://github.com/DevalPanchal/Python_Blackjack",
         location: "https://repl.it/@DevalPanchal/PythonBlackjack#Game.py"
-    },
-    
+    },    
 ];
 
 const allProjects = document.getElementById('all-projects');
