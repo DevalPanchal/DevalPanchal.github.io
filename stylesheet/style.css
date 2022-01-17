@@ -144,13 +144,13 @@ html {
 }
 
 .about-me-img {
-  opacity: 0.8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.603)), to(rgba(0, 0, 0, 0.603))), url("../parallax_images/pexels-junior-teixeira-2047905.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url("../parallax_images/pexels-junior-teixeira-2047905.jpg");
   position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url("../parallax_images/pexels-junior-teixeira-2047905.jpg");
 }
 
 .project-img {

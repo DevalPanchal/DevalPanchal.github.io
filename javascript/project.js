@@ -21,6 +21,16 @@ const projectData = [
     },
     {
         id: 3,
+        type: "React",
+        name: "Simple Budget Calculator",
+        image: "./images/Budget_Calculator.PNG",
+        technologies: ["ReactJS", "HTML/CSS"],
+        description: "This is a simple frontend monthly budget planner. The goal of this project was to better understand the flow of frontend application using various techniques, such as CRUD methods, data visualization, and design flow. This project allows storage in your browser's localstorage, and is planned to move to a server and database, for robust usage of the app.",
+        github: "https://github.com/DevalPanchal/MonthlyBudgetPlanner",
+        location: "https://devalpanchal.github.io/MonthlyBudgetPlanner/"
+    },
+    {
+        id: 3,
         type: "Node",
         name: "Real-Time Chat Application",
         image: "./images/JustChat.PNG",
