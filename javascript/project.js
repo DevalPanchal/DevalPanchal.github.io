@@ -31,13 +31,13 @@ const projectData = [
     },
     {
         id: 4,
-        type: "React",
-        name: "Random Quote Machine",
-        image: "./images/Random_Quote_Machine.PNG",
-        technologies: ["ReactJS", "HTML/CSS"],
-        description: "This project was created using React.js Library. This project fetches data using axios, which is a promise based HTTP client for the browser. The data was collected from a site provided by",
-        github: "https://github.com/DevalPanchal/Random-Quote-Machine",
-        location: "https://codepen.io/devalpanchal2401/pen/poEaRJW"
+        type: "JavaScript",
+        name: "Sorting Algorithm Visualization",
+        image: "./images/Sorting_Algorithm.PNG",
+        technologies: ["ReactJS", "HTML", "SASS"],
+        description: "This is a sorting algorithm visualization project, made to better understand different types of sorting algorithms. This project was made using ReactJS. This project displays how different types of sorting algorithms work, by giving the user a visual representation of the algorithm works behind the scenes step by step.",
+        github: "https://github.com/DevalPanchal/Sorting-Algorithms",
+        location: "https://devalpanchal.github.io/Sorting-Algorithms/"
     },
     {
         id: 5,
@@ -91,13 +91,13 @@ const projectData = [
     },
     {
         id: 10,
-        type: "JavaScript",
-        name: "Insertion Sort Visualisation",
-        image: "./images/Sorting_Algorithm.PNG",
-        technologies: ["JavaScript", "D3.js", "HTML", "SASS"],
-        description: "This project was made using basic html/css and javascript along with javascript's data visualisation library. The project displays how the insertion sort algorithm works by giving the user a visual representation of the algorithm works behind the scenes step by step.",
-        github: "https://github.com/DevalPanchal/Insertion-Sort-Visualisation",
-        location: "https://codepen.io/devalpanchal2401/full/vYXQBQL"
+        type: "React",
+        name: "Random Quote Machine",
+        image: "./images/Random_Quote_Machine.PNG",
+        technologies: ["ReactJS", "HTML/CSS"],
+        description: "This project was created using React.js Library. This project fetches data using axios, which is a promise based HTTP client for the browser. The data was collected from a site provided by",
+        github: "https://github.com/DevalPanchal/Random-Quote-Machine",
+        location: "https://codepen.io/devalpanchal2401/pen/poEaRJW"
     },
     {
         id: 11,
