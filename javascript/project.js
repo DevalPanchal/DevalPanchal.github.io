@@ -12,28 +12,6 @@ const projectData = [
     },
     {
         id: 2,
-        type: "React",
-        name: "Pokedex",
-        image: "./images/app-preview.PNG",
-        technologies: ["ReactJS", "HTML", "SASS"],
-        description: "A simple pokedex webpage showcasing pokemon, from <a href='pokeapi.co' class='member-link'>pokeapi.co</a>. This website was made using ReactJS and utilizing react hooks to achieve the desired outcome. The goal of this app was to familiarize myself with react hooks and the fetch api, and learn about caching fetched data.",
-        github: "https://github.com/DevalPanchal/react-pokedex",
-        location: "https://devalpanchal.github.io/react-pokedex/",
-        highlight: true
-    },
-    {
-        id: 3,
-        type: "React",
-        name: "Simple Budget Calculator",
-        image: "./images/Budget_Calculator.PNG",
-        technologies: ["ReactJS", "HTML/CSS"],
-        description: "This is a simple frontend monthly budget planner. The goal of this project was to better understand the flow of frontend application using various techniques, such as CRUD methods, data visualization, and design flow. This project allows storage in your browser's localstorage, and is planned to move to a server and database, for robust usage of the app.",
-        github: "https://github.com/DevalPanchal/MonthlyBudgetPlanner",
-        location: "https://devalpanchal.github.io/MonthlyBudgetPlanner/",
-        highlight: true
-    },
-    {
-        id: 4,
         type: "JavaScript",
         name: "Sorting Algorithm Visualization",
         image: "./images/Sorting_Algorithm.PNG",
@@ -41,6 +19,28 @@ const projectData = [
         description: "This is a sorting algorithm visualization project, made to better understand different types of sorting algorithms. This project was made using ReactJS. This project displays how different types of sorting algorithms work, by giving the user a visual representation of the algorithm works behind the scenes step by step.",
         github: "https://github.com/DevalPanchal/Sorting-Algorithms",
         location: "https://devalpanchal.github.io/Sorting-Algorithms/",
+        highlight: true
+    },
+    {
+        id: 3,
+        type: "Java",
+        name: "Pictionary Clone",
+        image: "./images/pictionary.PNG",
+        technologies: ["Java", "Javafx", "FXML", "CSS"],
+        description: "Responsible for the front end design for a simple multiplayer pictionary game made as group project with users: <a href='https://github.com/jkaterberg' class='member-link'>jkaterberg</a>, <a href='https://github.com/daniel-earley' class='member-link'>daniel-earley</a>, <a href='https://github.com/SJustinWong' class='member-link'>SJustinWong</a>. This game Follows the standard pictionary game loop, one player is selected to draw an image from a random word. The image is streamed to all other players, who are able to make guesses about the original word. Once the word is guessed, the next player is given a word to draw and the loop repeats",
+        github: "https://github.com/DevalPanchal/not-pictionary",
+        location: null,
+        highlight: true
+    },
+    {
+        id: 4,
+        type: "React",
+        name: "Pokedex",
+        image: "./images/app-preview.PNG",
+        technologies: ["ReactJS", "HTML", "SASS"],
+        description: "A simple pokedex webpage showcasing pokemon, from <a href='pokeapi.co' class='member-link'>pokeapi.co</a>. This website was made using ReactJS and utilizing react hooks to achieve the desired outcome. The goal of this app was to familiarize myself with react hooks and the fetch api, and learn about caching fetched data.",
+        github: "https://github.com/DevalPanchal/react-pokedex",
+        location: "https://devalpanchal.github.io/react-pokedex/",
         highlight: true
     },
     {
@@ -56,13 +56,13 @@ const projectData = [
     },
     {
         id: 6,
-        type: "Java",
-        name: "Pictionary Clone",
-        image: "./images/pictionary.PNG",
-        technologies: ["Java", "Javafx", "FXML", "CSS"],
-        description: "Responsible for the front end design for a simple multiplayer pictionary game made as group project with users: <a href='https://github.com/jkaterberg' class='member-link'>jkaterberg</a>, <a href='https://github.com/daniel-earley' class='member-link'>daniel-earley</a>, <a href='https://github.com/SJustinWong' class='member-link'>SJustinWong</a>. This game Follows the standard pictionary game loop, one player is selected to draw an image from a random word. The image is streamed to all other players, who are able to make guesses about the original word. Once the word is guessed, the next player is given a word to draw and the loop repeats",
-        github: "https://github.com/DevalPanchal/not-pictionary",
-        location: null,
+        type: "React",
+        name: "Simple Budget Calculator",
+        image: "./images/Budget_Calculator.PNG",
+        technologies: ["ReactJS", "HTML/CSS"],
+        description: "This is a simple frontend monthly budget planner. The goal of this project was to better understand the flow of frontend application using various techniques, such as CRUD methods, data visualization, and design flow. This project allows storage in your browser's localstorage, and is planned to move to a server and database, for robust usage of the app.",
+        github: "https://github.com/DevalPanchal/MonthlyBudgetPlanner",
+        location: "https://devalpanchal.github.io/MonthlyBudgetPlanner/",
         highlight: true
     },
     {
