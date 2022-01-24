@@ -773,8 +773,8 @@ html {
   height: 350px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 0 0 5px 2px black;
-          box-shadow: 0 0 5px 2px black;
+  -webkit-box-shadow: 0 0 5px 2px #0000001f;
+          box-shadow: 0 0 5px 2px #0000001f;
 }
 
 .project-section .project-container .project-wrapper .project .project-img {
