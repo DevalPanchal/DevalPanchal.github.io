@@ -768,16 +768,18 @@ html {
 }
 
 .project-section .project-container .project-wrapper .project {
+  border-radius: 2px;
   position: relative;
   width: 100%;
   height: 350px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 0 0 5px 2px #0000001f;
-          box-shadow: 0 0 5px 2px #0000001f;
+  -webkit-box-shadow: 0 0 5px 2px #00000024;
+          box-shadow: 0 0 5px 2px #00000024;
 }
 
 .project-section .project-container .project-wrapper .project .project-img {
+  border-radius: 2px;
   opacity: 1;
   width: 100%;
   height: 100%;
@@ -790,6 +792,7 @@ html {
 }
 
 .project-section .project-container .project-wrapper .project-information {
+  border-radius: 2px;
   position: absolute;
   bottom: 0;
   left: 0;
