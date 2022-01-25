@@ -584,9 +584,11 @@ html {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             margin: 10px 0;
             width: 50%;
+            
             .project-select {
                 transition: 0.2s all ease-in-out;
                 text-align: center;
+                padding: 3px;
                 &:hover {
                     background-color: $primaryBtnBackgroundColor;
                     color: $primaryTextColor;
@@ -595,6 +597,10 @@ html {
                 &:active {
                     background-color: $primaryBtnBackgroundColor;
                 }
+            }
+            .selected {
+                background-color: $primaryBtnBackgroundColor;
+                color: white;
             }
         }
         //border: 1px solid blue;

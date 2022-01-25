@@ -165,10 +165,12 @@ const javaProjects = document.getElementById("java-projects");
 
 const projectWrapper = document.querySelector('.project-wrapper');
 
+let selections = document.querySelectorAll(".project-select");
 
 const viewHighlightedProjects = () => {
     console.log("you are viewing highlighted projects");
     let filteredData = projectData.filter(p => p.highlight);
+    selectedFilter(highlightProjects, "highlight-projects");
     resetState();
     appendFilteredData(filteredData);
     return filteredData;
@@ -177,6 +179,7 @@ const viewHighlightedProjects = () => {
 const viewAllProjects = () => {
     console.log("you are view all projects");
     let filteredData = projectData.filter(p => p.type);
+    selectedFilter(allProjects, "all-projects");
     resetState();
     appendFilteredData(filteredData);
     return filteredData;
@@ -185,6 +188,7 @@ const viewAllProjects = () => {
 const viewReactProjects = () => {
     console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "React");
+    selectedFilter(reactProjects, "react-projects");
     resetState();
     appendFilteredData(filteredData);
     // console.log(filteredData);
@@ -193,6 +197,7 @@ const viewReactProjects = () => {
 const viewJavaScriptProjects = () => {
     console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "JavaScript");
+    selectedFilter(javascriptProjects, "javascript-projects");
     resetState();
     appendFilteredData(filteredData);
     // console.log(filteredData);
@@ -201,6 +206,7 @@ const viewJavaScriptProjects = () => {
 const viewNodeProjects = () => {
     console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "Node");
+    selectedFilter(nodeProjects, "node-projects");
     resetState();
     appendFilteredData(filteredData);
     // console.log(filteredData);
@@ -209,6 +215,7 @@ const viewNodeProjects = () => {
 const viewPythonProjects = () => {
     console.log("you are viewing react projects");
     let filteredData = projectData.filter(p => p.type == "Python");
+    selectedFilter(pythonProjects, "python-projects");
     resetState();
     appendFilteredData(filteredData);
     // console.log(filteredData);
@@ -217,6 +224,7 @@ const viewPythonProjects = () => {
 const viewJavaProjects = () => {
     console.log("you are viewing java projects");
     let filteredData = projectData.filter(p => p.type == "Java");
+    selectedFilter(javaProjects, "java-projects");
     resetState();
     appendFilteredData(filteredData);
     // console.log(filteredData);
@@ -273,6 +281,15 @@ function appendFilteredData(filteredData) {
         // projectDiv.innerHTML = `${filteredData.name}`;
         projectWrapper.appendChild(projectDiv);
     });
+}
+
+function selectedFilter(elementTag, elementID) {
+    elementTag.classList.add("selected");
+    selections.forEach((item, index) => {
+        if (item.id !== elementID) {
+            item.classList.remove("selected");
+        }
+    })
 }
 
 function resetState() {

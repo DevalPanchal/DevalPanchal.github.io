@@ -743,6 +743,7 @@ html {
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   text-align: center;
+  padding: 3px;
 }
 
 .project-section .project-container .project-select-container .project-select:hover {
@@ -753,6 +754,11 @@ html {
 
 .project-section .project-container .project-select-container .project-select:active {
   background-color: #4185dd;
+}
+
+.project-section .project-container .project-select-container .selected {
+  background-color: #4185dd;
+  color: white;
 }
 
 .project-section .project-container .project-wrapper {
