@@ -167,6 +167,8 @@ const projectWrapper = document.querySelector('.project-wrapper');
 
 let selections = document.querySelectorAll(".project-select");
 
+let projects = document.getElementsByClassName("project");
+
 const viewHighlightedProjects = () => {
     console.log("you are viewing highlighted projects");
     let filteredData = projectData.filter(p => p.highlight);
@@ -236,7 +238,7 @@ highlighedProjects.forEach((projects) => {
     var projectDiv = document.createElement('div');
     
     projectDiv.innerHTML = `
-    <div class="project">
+    <div class="project" id="project">
         <img class="project-img" src="${projects.image}" alt="${projects.name}"/>
         <div class="project-information">
             <div class="text">
@@ -262,7 +264,7 @@ function appendFilteredData(filteredData) {
     filteredData.forEach((filtered) => {
         var projectDiv = document.createElement('div');
         projectDiv.innerHTML = `
-        <div class="project">
+        <div class="project" id="project">
             <img class="project-img" src="${filtered.image}" alt="${filtered.name}"/>
             <div class="project-information">
                 <div class="text">
@@ -293,7 +295,20 @@ function selectedFilter(elementTag, elementID) {
 }
 
 function resetState() {
+    // projectWrapper.innerHTML = ``;
+    // projectWrapper.classList.add("fade");
+    // let children = [];
+    // for (let i = 0; i < projectWrapper.children.length; i++) {
+    //     children.push(projectWrapper.children[i].children);
+    // }
+    // console.log(children);
+    projectWrapper.classList.add("fade");
+
     projectWrapper.innerHTML = ``;
+
+    setTimeout(() => {
+        projectWrapper.classList.remove("fade");
+    }, 600);
 }
 
 highlightProjects.addEventListener('click', viewHighlightedProjects);

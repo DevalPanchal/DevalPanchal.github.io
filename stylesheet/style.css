@@ -302,6 +302,24 @@ html {
   }
 }
 
+@-webkit-keyframes projectTransition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes projectTransition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home-container {
   min-height: 100%;
   overflow: hidden;
@@ -692,7 +710,9 @@ html {
 
 .project-section {
   min-width: 100%;
-  min-height: 100%;
+  max-height: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,8 +789,8 @@ html {
       grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .project-section .project-container .project-wrapper .project {
@@ -795,6 +815,10 @@ html {
   position: relative;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+}
+
+.project-section .project-container .project-wrapper .fade {
+  content: "";
 }
 
 .project-section .project-container .project-wrapper .project-information {
@@ -915,6 +939,11 @@ html {
 .project-section .project-container .project-wrapper .text .link-site:hover {
   background-color: #4185dd;
   border: 2px solid #4185dd;
+}
+
+.project-section .project-container .fade {
+  -webkit-animation: projectTransition 0.6s ease-in-out normal;
+          animation: projectTransition 0.6s ease-in-out normal;
 }
 
 .contact-me-container {
@@ -1669,14 +1698,14 @@ html {
     height: 20%;
   }
   .project-section .project-container .project-select-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    gap: 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px 0;
+    width: 100%;
+    overflow-x: scroll;
   }
   .project-section .project-container .project-select-container .project-select {
     -webkit-box-flex: 0;
@@ -1812,14 +1841,14 @@ html {
     opacity: 0.7;
   }
   .project-section .project-container .project-select-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    gap: 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px 0;
+    width: 100%;
+    overflow-x: scroll;
   }
   .project-section .project-container .project-select-container .project-select {
     -webkit-box-flex: 0;

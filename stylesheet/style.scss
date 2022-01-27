@@ -272,6 +272,14 @@ html {
     100% {margin-top:-270px;}
 }
 
+@keyframes projectTransition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .home-container {
     min-height: 100%;
@@ -560,7 +568,8 @@ html {
 
 .project-section {
     min-width: 100%;
-    min-height: 100%;
+    max-height: auto;
+    transition: 0.2s;
     .section-title {
         width: 100%;
         text-align: center;
@@ -611,7 +620,7 @@ html {
             gap: 10px;
             //border: 1px dashed purple;
             padding: 10px;
-            transition: 0.2s;
+            transition: 0.3s;
             .project {
                 // border: 1px solid pink;
                 border-radius: 2px;
@@ -631,7 +640,9 @@ html {
                     transition: 0.2s all;
                 }
             }
-
+            .fade {
+                content: "";
+            }
             .project-information {
                 border-radius: 2px;
                 position: absolute;
@@ -729,6 +740,9 @@ html {
                     }
                 }
             }
+        }
+        .fade {
+            animation: projectTransition 0.6s ease-in-out normal;
         }
     }
 }
@@ -1331,10 +1345,12 @@ html {
     .project-section {
         .project-container {
             .project-select-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-
+                gap: 15px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                margin: 10px 0;
+                width: 100%;
+                overflow-x: scroll;
                 .project-select {
                     flex: 0 0 calc(25% - 20px);
                     width: 100px;
@@ -1457,9 +1473,12 @@ html {
     .project-section {
         .project-container {
             .project-select-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                gap: 15px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                margin: 10px 0;
+                width: 100%;
+                overflow-x: scroll;
 
                 .project-select {
                     flex: 0 0 calc(25% - 20px);
