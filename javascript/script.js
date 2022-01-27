@@ -5,7 +5,7 @@ let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
 let navLinkTag = document.querySelectorAll("#js-menu");
-let navLinks = document.getElementById('nav-links');
+let navLinks = document.querySelector('.nav-links');
 
 const body = document.getElementsByTagName("body");
 
@@ -85,7 +85,7 @@ const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startS
 
     progress = Math.min(progress, 1);
 
-    const ease = easeOutQuart(progress);
+    const ease = easeInOutExpo(progress);
 
     window.scroll(0, startScrollOffset + (scrollEndElemTop * ease));
     if (runtime < duration) {
@@ -101,7 +101,7 @@ window.onscroll = () => {
     if (scrollTop > window.innerHeight) {
         navBar.style.height = "60px";
         // navBar.style.backgroundColor = "#000000ce";
-        navBar.style.background = "linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0.7346288857339811) 100%)"
+        navBar.style.background = "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0.7346288857339811) 100%)"
     } else {
         navBar.style.height = "50px";
         navBar.style.background = "linear-gradient(black, black)"

@@ -216,7 +216,9 @@ html {
     transition: 0.2s;
     .main-nav {
         list-style-type: none;
-        display: none;
+        display: flex;
+        // margin: 10px;
+        gap: 15px;
         width: 100%;
         a {
             padding: 3px 0;
@@ -239,7 +241,7 @@ html {
         align-items: center;
         font-weight: bold;
     }
-    #nav-links {
+    .nav-links {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.7);
     }
@@ -390,7 +392,8 @@ html {
             text-align: center;
             .inline-texts {
                 display: inline;
-                color: $primaryBtnBackgroundColor;
+                // color: $primaryBtnBackgroundColor;
+                color: #0033ff;
             }
         }
     }
@@ -622,16 +625,17 @@ html {
                 text-align: center;
                 padding: 3px;
                 &:hover {
-                    background-color: $primaryBtnBackgroundColor;
+                    background-color: #264ce4e7;
                     color: $primaryTextColor;
                     cursor: pointer;
                 }
                 &:active {
-                    background-color: $primaryBtnBackgroundColor;
+                    background-color: #264de4e7;
                 }
             }
             .selected {
-                background-color: $primaryBtnBackgroundColor;
+                // background-color: $primaryBtnBackgroundColor;
+                background-color: #264de4e7;
                 color: white;
             }
         }
@@ -1177,6 +1181,17 @@ html {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 50px;
+        align-items: center;
+        .main-nav {
+            display: none;
+        }
+    }
     .technologies-container {
         border-radius: 5px;
         width: 80%;
@@ -1248,6 +1263,66 @@ html {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+    .navbar {
+        position: fixed;
+        font-size: 18px;
+        background-color: $primaryWebColor;
+        width: 100%;
+        z-index: 1;
+        height: 50px;
+        transition: 0.2s;
+        .main-nav {
+            list-style-type: none;
+            display: none;
+            // margin: 10px;
+            width: 100%;
+            a {
+                padding: 3px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                &:active {
+                    border-radius: 3px;
+                    background-color: $primaryBtnBackgroundColor;
+                }
+            }
+        }
+        .logo {
+            color: white;
+            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .nav-links {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+    
+        .active {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $primaryWebColor;
+            animation: navExpand 0.5s ease normal;
+        }
+    }
     .about-me {
         min-height: 90%;
         display: flex;
@@ -1409,6 +1484,66 @@ html {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .navbar {
+        position: fixed;
+        font-size: 18px;
+        background-color: $primaryWebColor;
+        width: 100%;
+        z-index: 1;
+        height: 50px;
+        transition: 0.2s;
+        .main-nav {
+            list-style-type: none;
+            display: none;
+            // margin: 10px;
+            width: 100%;
+            a {
+                padding: 3px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                &:active {
+                    border-radius: 3px;
+                    background-color: $primaryBtnBackgroundColor;
+                }
+            }
+        }
+        .logo {
+            color: white;
+            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .nav-links {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+    
+        .active {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $primaryWebColor;
+            animation: navExpand 0.5s ease normal;
+        }
+    }
     /* CSS */
     .about-me {
         min-height: 90%;

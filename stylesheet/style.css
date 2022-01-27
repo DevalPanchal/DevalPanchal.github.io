@@ -176,7 +176,10 @@ html {
 
 .navbar .main-nav {
   list-style-type: none;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
   width: 100%;
 }
 
@@ -216,7 +219,7 @@ html {
   font-weight: bold;
 }
 
-.navbar #nav-links {
+.navbar .nav-links {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -495,7 +498,7 @@ html {
 
 .about-me .about-me-container .about-me-information .inline-texts {
   display: inline;
-  color: #4185dd;
+  color: #0033ff;
 }
 
 .about-me .skills-and-technologies {
@@ -807,17 +810,17 @@ html {
 }
 
 .project-section .project-container .project-select-container .project-select:hover {
-  background-color: #4185dd;
+  background-color: #264ce4e7;
   color: #f5f5f5;
   cursor: pointer;
 }
 
 .project-section .project-container .project-select-container .project-select:active {
-  background-color: #4185dd;
+  background-color: #264de4e7;
 }
 
 .project-section .project-container .project-select-container .selected {
-  background-color: #4185dd;
+  background-color: #264de4e7;
   color: white;
 }
 
@@ -1511,6 +1514,24 @@ html {
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .navbar {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .main-nav {
+    display: none;
+  }
   .technologies-container {
     border-radius: 5px;
     width: 80%;
@@ -1600,6 +1621,87 @@ html {
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    font-size: 18px;
+    background-color: #000;
+    width: 100%;
+    z-index: 1;
+    height: 50px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none;
+    width: 100%;
+  }
+  .navbar .main-nav a {
+    padding: 3px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .navbar .main-nav a:active {
+    border-radius: 3px;
+    background-color: #4185dd;
+  }
+  .navbar .logo {
+    color: white;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+  }
+  .navbar .nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  .navbar .active {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+    -webkit-animation: navExpand 0.5s ease normal;
+            animation: navExpand 0.5s ease normal;
+  }
   .about-me {
     min-height: 90%;
     display: -webkit-box;
@@ -1774,6 +1876,87 @@ html {
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    position: fixed;
+    font-size: 18px;
+    background-color: #000;
+    width: 100%;
+    z-index: 1;
+    height: 50px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none;
+    width: 100%;
+  }
+  .navbar .main-nav a {
+    padding: 3px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .navbar .main-nav a:active {
+    border-radius: 3px;
+    background-color: #4185dd;
+  }
+  .navbar .logo {
+    color: white;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+  }
+  .navbar .nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  .navbar .active {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+    -webkit-animation: navExpand 0.5s ease normal;
+            animation: navExpand 0.5s ease normal;
+  }
   /* CSS */
   .about-me {
     min-height: 90%;
