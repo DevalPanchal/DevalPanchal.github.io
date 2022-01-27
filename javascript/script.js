@@ -7,6 +7,8 @@ let navBarToggle = document.getElementById('js-navbar-toggle');
 let navLinkTag = document.querySelectorAll("#js-menu");
 let navLinks = document.getElementById('nav-links');
 
+const body = document.getElementsByTagName("body");
+
 const DELAY_TIME = 100;
 
 navBarToggle.addEventListener("click", () => {
@@ -14,11 +16,12 @@ navBarToggle.addEventListener("click", () => {
     navLinkTag.forEach(item => {
         item.addEventListener('click', () => {
             setTimeout(() => {
-                mainNav.classList.remove("active")
+                mainNav.classList.remove("active");
             }, DELAY_TIME);
         });
     });
 });
+
 
 for (let i = 0; i < scrollElems.length; i++) {
     const elem = scrollElems[i];
@@ -90,5 +93,17 @@ const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startS
             const currentTime = timestamp || new Date().getTime();
             scrollToElem(startTime, currentTime, duration, scrollEndElemTop, startScrollOffset);
         });
+    }
+}
+
+window.onscroll = () => {
+    let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    if (scrollTop > window.innerHeight) {
+        navBar.style.height = "60px";
+        // navBar.style.backgroundColor = "#000000ce";
+        navBar.style.background = "linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0.7346288857339811) 100%)"
+    } else {
+        navBar.style.height = "50px";
+        navBar.style.background = "linear-gradient(black, black)"
     }
 }
