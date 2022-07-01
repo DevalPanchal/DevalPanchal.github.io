@@ -295,13 +295,6 @@ function selectedFilter(elementTag, elementID) {
 }
 
 function resetState() {
-    // projectWrapper.innerHTML = ``;
-    // projectWrapper.classList.add("fade");
-    // let children = [];
-    // for (let i = 0; i < projectWrapper.children.length; i++) {
-    //     children.push(projectWrapper.children[i].children);
-    // }
-    // console.log(children);
     projectWrapper.classList.add("fade");
 
     projectWrapper.innerHTML = ``;

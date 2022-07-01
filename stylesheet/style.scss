@@ -183,7 +183,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("../parallax_images/pexels-jéshoots-234527.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url("../parallax_images/pexels-jéshoots-234527.jpg");
 }
 
 .about-me-img {
@@ -387,8 +387,12 @@ html {
         align-items: center;
         //border: 1px solid pink;
         width: 50%;
-
+        h2 {
+            font-size: 25px;
+        }
         .about-me-information {
+            font-size: 20px;
+            line-height: 2.3rem;
             text-align: center;
             .inline-texts {
                 display: inline;
